@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vedio-player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <!-- //vedio -->
+      <video width="520" height="440" id="video">
+        <!-- <source src="./Skyscrapers - 80724 (1).mp4" type="video/mp4" id="videoSrc"> -->
+        <source
+src="./Get Licensed.mp4"
+          type="video/mp4"
+          id="videoSrc"
+        />
+      </video>
+
+      <div id="controlSec" class="operate">
+        <!-- progress -->
+
+        <section class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </section>
+
+        <!-- controls -->
+
+        <section class="controls">
+          <div class="left">
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-thin fa-volume"></i>
+            <div class="volumeRange" id="volumeRange">
+              <input type="range" id="volumeR" name="volume" />
+            </div>
+          </div>
+          <div class="right">
+            <i class="fa-solid fa-expand" id="fullScreen"></i>
+          </div>
+
+          <div class="speed">
+            <select name="as" id="speedSelect">
+              <option value="0.1" selected>0.1x</option>
+              <option value="0.2">0.2x</option>
+              <option value="0.3">0.3x</option>
+              <option value="0.4">0.4x</option>
+              <option value="1">1.0</option>
+            </select>
+          </div>
+
+          <div class="time">
+            <span id="curr">00</span> / <span id="dura">00</span>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>

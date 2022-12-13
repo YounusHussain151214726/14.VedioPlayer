@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.operate {
+  width: 32%;
+  position: absolute;
+  left: 523px;
+  bottom: 400px;
+}
+
+.largeScreen {
+  width: 90%;
+  /* border: 2px solid green; */
+  position: absolute;
+  left: 70px;
+  bottom: 10px;
+}
+
+.progress-container {
+  background-color: antiquewhite;
+  display: block;
+  height: 8px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.controls {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.controls > * {
+  color: rgb(235, 223, 223);
+}
+
+.left {
+  display: flex;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(183, 183, 222);
+  border-radius: 4rem;
+}
+
+.volumeRange {
+  padding-left: 1rem;
+}
